@@ -7,7 +7,7 @@
     "build": "pnpm run typecheck && pnpm -r --if-present run build",
     "typecheck:libs": "tsc --build",
     "typecheck": "pnpm run typecheck:libs && pnpm -r --filter \"./artifacts/**\" --filter \"./scripts\" --if-present run typecheck",
-  "start": "pnpm --filter shabari-food-and-drinks run start"  
+ "start": "pnpm --filter @workspace/shabari-food-drinks run dev"  
   },
   "private": true,
   "dependencies": {
